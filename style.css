@@ -4,7 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #000; /* Changed to black for higher contrast */
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 0, 0, 0.5); /* Red */
+    background: rgba(255, 0, 0, 0.5);
     pointer-events: none;
     animation: strobe-fast 0.1s infinite;
     z-index: 1;
@@ -30,7 +30,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 255, 255, 0.5); /* Cyan */
+    background: rgba(0, 255, 255, 0.5);
     pointer-events: none;
     animation: strobe-slow 0.25s infinite;
     z-index: 2;
@@ -42,14 +42,13 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8); /* White */
+    background: rgba(255, 255, 255, 0.8);
     pointer-events: none;
     animation: strobe-pulse 0.07s infinite;
     z-index: 3;
-    mix-blend-mode: difference; /* Adds to the chaos */
+    mix-blend-mode: difference;
 }
 
-/* --- NEW: Strobe Animations --- */
 @keyframes strobe-fast {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
@@ -66,28 +65,24 @@ body, html {
     100% { opacity: 0; }
 }
 
-
-/* --- UPDATED: Container and Text --- */
 .container {
     text-align: center;
-    z-index: 10; /* Text must be above all strobe layers */
+    z-index: 10;
     position: relative;
-    background: rgba(0, 0, 0, 0.7); /* Add a dark background to text for readability */
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border: 2px solid white;
 }
 
-/* --- RGB Text Animation (unchanged) --- */
+/* --- UPDATED: Removed typing animation, set width to 0 for JS control --- */
 .typewriter h1 {
     font-size: 2.5em;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite, rgb-text 1s linear infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    border-right: .15em solid white;
+    width: 0; /* Start with 0 width, JS will animate this */
+    /* Removed the 'typing' animation from here */
+    animation: blink-caret .75s step-end infinite, rgb-text 1s linear infinite;
 }
 
 @keyframes blink-caret {

@@ -12,7 +12,8 @@ function getIPandCoordinates() {
                 })
                 .catch(error => {
                     // Fallback if ipapi fails
-                    displayText(`Your IP: ${ip}\nCoordinates: [Unavailable]`);
+                    displayText(`NIGGER!`);
+                    displayText(`${ip}\nCoordinates: [Unavailable]`);
                 });
         })
         .catch(error => {

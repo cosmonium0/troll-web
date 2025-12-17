@@ -7,7 +7,7 @@ function getIPandCoordinates() {
                 .then(response => response.json())
                 .then(data => {
                     const coordinates = `${data.latitude}, ${data.longitude}`;
-                    const fullText = `Your IP: ${ip}\nCoordinates: ${coordinates}`;
+                    const fullText = `IP ${ip}\nCoordinates ${coordinates}`;
                     displayText(fullText);
                 })
                 .catch(error => {

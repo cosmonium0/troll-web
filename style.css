@@ -99,3 +99,19 @@ body, html {
     83%  { color: #8800ff; text-shadow: 0 0 10px #8800ff, 0 0 20px #8800ff; }
     100% { color: #ff0000; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; }
 }
+
+/* --- NEW: Styles for the Random Image --- */
+#random-image-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5; /* Below the text box, above the background */
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+#random-image {
+    display: block;
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}

